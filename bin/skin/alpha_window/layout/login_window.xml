@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,300" caption="0,0,0,9000" bktrans="true" roundcorner="0,0">
+  <Font name="宋体" size="12" bold="false" default="false"/>
+  <Font name="微软雅黑" size="12" bold="false" underline="true"/>
+  <Font name="微软雅黑" size="14" bold="false" default="false"/>
+  <VerticalLayout bkimage="file='images\Login\login_bk.png'  corner='10,10,15,25' " inset="26,3,3,3" >
+	<ActiveX name="flashBk" float="true" pos="18,108,380,290" clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}" mouse="false"/>
+    <HorizontalLayout height="30" >
+    	<Control />
+		<Label  text="我是微软雅黑" width="160" height="20" textpadding="0,4,0,0" font="2" textcolor="#FE000000"/>
+    	<FadeButton name="settingbtn" width="30" height="27" tooltip="设置" framecount="10" normalimage="file='images/SysButton/aio_setting_normal.png'" hotimage="file='file='images/SysButton/aio_setting_hover.png'" hotimage="file='images/SysButton/aio_setting_down.png'"/>
+		<FadeButton name="minbtn" width="30" height="27" tooltip="最小化" framecount="10" normalimage="file='images/SysButton/sysbtn_min_normal.png'" hotimage="file='file='images/SysButton/sysbtn_min_hover.png'" hotimage="file='images/SysButton/sysbtn_min_down.png'"/>
+		<FadeButton name="closebtn" width="30" height="27" tooltip="关闭" framecount="10" normalimage="file='images/SysButton/sysbtn_close_normal.png'" hotimage="file='images/SysButton/sysbtn_close_hover.png'" pushedimage="file='images/SysButton/sysbtn_close_down.png'"/>	
+    </HorizontalLayout>
+    <HorizontalLayout height="60">
+    	<Control width="15"/>
+    </HorizontalLayout>
+    <Control height="25"/>
+     <Label name="login_warning" width="110" height="22" textpadding="10,5,0,0" textcolor="#FEFF0000"/>  
+    <HorizontalLayout height="30">
+    	<Control width="30"/>
+    	<Label  text="用户名:" width="60" height="20" textpadding="0,4,0,0" font="2" textcolor="#FE000000"/>
+		<HorizontalLayout width="176" height="30" bkcolor="#5ececece" bkcolor2="5ececece" inset="4,4,3,3">
+			<RichEdit name="usernameEdit" font="2" textcolor="#FE000000" multiline="false" wanttab="false" rich="false"/>
+		</HorizontalLayout>
+    	<Control width="10"/>
+   		<Button  name="btn_register" width="51" height="16" padding="0,3,0,0" normalimage="file='images/Login/register_normal.png'" hotimage="file='images/Login/register_hover.png'" pushedimage="file='images/Login/register_down.png'"/>
+   		<Control />
+    </HorizontalLayout>
+    <HorizontalLayout height="30" padding="0,5,0,0">
+		<Control width="30"/>
+		<Label  text="密码:" width="60" height="20" textpadding="0,4,0,0" textcolor="#FE000000"/>
+		<HorizontalLayout width="176" height="30" bkcolor="#5ececece" bkcolor2="5ececece" inset="4,4,3,3">
+			<RichEdit name="passwordEdit" font="2" textcolor="#FE000000" password="true" multiline="false" wanttab="false" rich="false"/>
+		</HorizontalLayout>
+		<Control width="10"/>
+		<Button  name="btn_fine_pass"  width="51" height="16" padding="0,3,0,0" normalimage="file='images/Login/password_normal.png'" hotimage="file='images/Login/password_hover.png'" pushedimage="file='images/Login/password_down.png'"/>
+		<Control />
+     </HorizontalLayout> 
+     <HorizontalLayout height="20" inset="90,0,0,0" padding="0,5,0,0">
+     	<Option name="recordPassOption" text="记住密码" width="109" height="20" align="left" textpadding="20,2,0,0" normalimage="file='images\Default\CheckBox.png' dest='0,2,18,16' source='0,0,18,14'" hotimage="file='images\Default\CheckBox.png' source='18,0,36,14' dest='0,2,18,16'" selectedimage="file='images\Default\CheckBox.png' source='36,0,54,14' dest='0,2,18,16'" hotimage_sel="file='images\Default\CheckBox.png' source='36,0,54,14' dest='0,2,18,16'" pushedimage_sel="file='images\Default\CheckBox.png' source='36,0,54,14' dest='0,2,18,16'" />
+     	<Option name="autoLoginOption" text="自动登录" width="109" height="20" align="left" textpadding="20,2,0,0" normalimage="file='images\Default\CheckBox.png' dest='0,2,18,16' source='0,0,18,14'" hotimage="file='images\Default\CheckBox.png' source='18,0,36,14' dest='0,2,18,16'" selectedimage="file='images\Default\CheckBox.png' source='36,0,54,14' dest='0,2,18,16'"  hotimage_sel="file='images\Default\CheckBox.png' source='36,0,54,14' dest='0,2,18,16'" pushedimage_sel="file='images\Default\CheckBox.png' source='36,0,54,14' dest='0,2,18,16'" />
+     </HorizontalLayout>         
+	   <Control height="13"/> 
+	   <HorizontalLayout height="50" inset="90,0,0,0">
+	   	<Button  name="loginServerBtn" text="登录" width="176" height="32" font="2"  textcolor="#FE000000" align="center"  pushedimage="file='images\Default\btn.png' corner='5,5,5,5' source='0,0,68,22' " normalimage="file='images\Default\btn.png' corner='5,5,5,5' source='68,0,136,22' " hotimage="file='images\Default\btn.png' corner='5,5,5,5' source='136,0,204,22'" />
+	    <Control />
+	 </HorizontalLayout> 
+</VerticalLayout>
+</Window>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="control_ext">
+      <UniqueIdentifier>{e37fd4c1-0395-4d6f-ba2b-5d37c12e3a3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="control_ext\TagControl.h">
+      <Filter>control_ext</Filter>
+    </ClInclude>
+    <ClInclude Include="hello_world_window.h" />
+    <ClInclude Include="control_ext\OptionEx.h">
+      <Filter>control_ext</Filter>
+    </ClInclude>
+    <ClInclude Include="control_ext\EditLable.h">
+      <Filter>control_ext</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="control_ext\TagControl.cpp">
+      <Filter>control_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_world_window.cpp" />
+    <ClCompile Include="control_ext\OptionEx.cpp">
+      <Filter>control_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="control_ext\EditLable.cpp">
+      <Filter>control_ext</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hello_world.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="hello_world.ico">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
